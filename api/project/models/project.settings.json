@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project",
+  "info": {
+    "name": "project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "featuredImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "details": {
+      "type": "text",
+      "required": true
+    },
+    "technologies": {
+      "via": "projects",
+      "collection": "technology"
+    },
+    "project_type": {
+      "via": "projects",
+      "model": "project-type"
+    },
+    "project_category": {
+      "via": "projects",
+      "model": "project-category"
+    },
+    "repo": {
+      "type": "string"
+    },
+    "isPublic": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "isPublished": {
+      "type": "boolean"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "photoCredit": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
