@@ -15,8 +15,8 @@
       "type": "string"
     },
     "projects": {
-      "collection": "project",
-      "via": "project_type"
+      "via": "project_type",
+      "collection": "project"
     },
     "slug": {
       "type": "uid",

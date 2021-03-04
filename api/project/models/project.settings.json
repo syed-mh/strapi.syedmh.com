@@ -35,31 +35,27 @@
     },
     "details": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 450,
+      "minLength": 100
     },
     "technologies": {
-      "via": "projects",
-      "collection": "technology"
+      "collection": "technology",
+      "via": "projects"
     },
     "project_type": {
-      "via": "projects",
-      "model": "project-type"
+      "model": "project-type",
+      "via": "projects"
     },
     "project_category": {
-      "via": "projects",
-      "model": "project-category"
+      "model": "project-category",
+      "via": "projects"
     },
     "repo": {
       "type": "string"
     },
-    "isPublic": {
-      "type": "boolean"
-    },
     "url": {
       "type": "string"
-    },
-    "isPublished": {
-      "type": "boolean"
     },
     "featured": {
       "type": "boolean",
@@ -78,6 +74,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "pageViews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image-container.website-view",
+      "required": true
     }
   }
 }
