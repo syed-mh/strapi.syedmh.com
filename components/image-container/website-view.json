@@ -7,42 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "desktopView": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "views": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image-container.views"
     },
-    "tabletView": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "mobileView": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "viewName": {
-      "type": "string",
-      "required": true
+    "name": {
+      "type": "string"
     }
   }
 }

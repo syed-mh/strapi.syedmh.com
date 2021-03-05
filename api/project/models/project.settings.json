@@ -79,7 +79,7 @@
       "type": "component",
       "repeatable": true,
       "component": "image-container.website-view",
-      "required": true
+      "required": false
     }
   }
 }
