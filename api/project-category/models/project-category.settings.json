@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "project_categories",
+  "collectionName": "projectCategories",
   "info": {
-    "name": "Project Category",
+    "name": "ProjectCategory",
     "description": ""
   },
   "options": {
@@ -14,13 +14,13 @@
     "name": {
       "type": "string"
     },
-    "projects": {
-      "via": "project_category",
-      "collection": "project"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "project_category"
     }
   }
 }

@@ -43,14 +43,6 @@
       "collection": "technology",
       "via": "projects"
     },
-    "project_type": {
-      "model": "project-type",
-      "via": "projects"
-    },
-    "project_category": {
-      "model": "project-category",
-      "via": "projects"
-    },
     "repo": {
       "type": "string"
     },
@@ -80,6 +72,14 @@
       "repeatable": true,
       "component": "image-container.website-view",
       "required": false
+    },
+    "project_type": {
+      "via": "projects",
+      "model": "project-type"
+    },
+    "project_category": {
+      "via": "projects",
+      "model": "project-category"
     }
   }
 }

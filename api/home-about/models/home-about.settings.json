@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "static_website_texts",
+  "kind": "singleType",
+  "collectionName": "home_abouts",
   "info": {
-    "name": "Static Website Text",
+    "name": "homeAbout",
     "description": ""
   },
   "options": {
@@ -11,11 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "textContent": {
+    "content": {
       "type": "text"
     },
-    "slug": {
-      "type": "uid"
+    "designation": {
+      "type": "string"
     }
   }
 }

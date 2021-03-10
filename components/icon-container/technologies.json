@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_icon_container_technologies",
+  "info": {
+    "name": "technologies",
+    "icon": "icons",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "technologyName": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

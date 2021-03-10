@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_list_content_container_list_contents",
+  "info": {
+    "name": "listContent",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "detail": {
+      "type": "string"
+    }
+  }
+}

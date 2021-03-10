@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_list_container_other_expertises",
+  "info": {
+    "name": "otherExpertise",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "listContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-content-container.list-content"
+    }
+  }
+}

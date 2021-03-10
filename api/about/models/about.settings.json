@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "technologies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "icon-container.technologies"
+    },
+    "otherExpertise": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-container.other-expertise"
+    },
+    "aboutImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "aboutMe": {
+      "type": "richtext"
+    }
+  }
+}
